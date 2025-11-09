@@ -20,9 +20,9 @@ with st.sidebar:
     st.header("🧩 My profile")
     st.write("Fill these fields — they prime the assistant about you.")
     name = st.text_input("Name", value="Angela Beesley")
-    roles = st.text_input("Roles / Titles", value="R&D Engineering Lead; MBA candidate")
-    orgs = st.text_input("Organisations / Sectors", value="Thermo Fisher Scientific; Scientific instrumentation; Aerospace actuators; Consumer goods")
-    interests = st.text_input("Interests / Domains", value="Quantum readiness; AI & data; Operations & supply chain; Sustainability")
+    roles = st.text_input("Roles / Titles", value="Engineering Lead")
+    orgs = st.text_input("Organisations / Sectors", value="Analytical Instruments; Aerospace; Consumer goods")
+    interests = st.text_input("Interests / Domains", value="Organizational Strategy; Quantum computing; AI & data; Operations & supply chain; Sustainability")
     achievements = st.text_area("Key achievements (bulleted)", value="- Led cross‑functional R&D teams\n- Designed analytics instrumentation improvements\n- MBA projects on quantum and supply chain")
     tone = st.selectbox("Tone", ["Professional", "Warm", "Crisp & concise", "Enthusiastic"], index=0)
     model_name = st.text_input("OpenAI model", value=os.environ.get("OPENAI_MODEL", "gpt-4o-mini"))
@@ -68,12 +68,12 @@ if st.session_state.messages and st.session_state.messages[0]["role"] == "system
 with st.expander("✨ Try a suggested prompt"):
     cols = st.columns(2)
     examples = [
-        "Summarize my background for a short professional bio.",
-        "Draft a LinkedIn 'About' section using my profile.",
-        "What strengths should I highlight for a Head of Engineering role?",
-        "Create 5 interview questions I’m likely to get, with model answers.",
-        "Write a 1‑paragraph intro tying my MBA to my R&D role.",
-        "Outline a 90‑day plan for my next leadership step."
+        "What is your area of expertise?",
+        "How many years experience do you have on your role as Engineer Leader and/or Manager?",
+        "What are your strenghts?",
+        "What is your most important qualifications?",
+        "What role did you enjoy the most in your career?",
+        "What type of leader are you?"
     ]
     for i, ex in enumerate(examples):
         if cols[i % 2].button(ex):
