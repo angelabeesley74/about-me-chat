@@ -11,13 +11,13 @@ except Exception as e:
     raise
 
 # ----- App Title -----
-st.set_page_config(page_title="About‑Me Chat", page_icon="💬")
-st.title("💬 About‑Me Chat (OpenAI + Streamlit)")
-st.caption("A simple personal chat box that answers based on *your* profile.")
+st.set_page_config(page_title="About Angela Beesley Chat", page_icon="💬")
+st.title("💬 Chat with Angela Beesley")
+st.caption("This is my personal chat box that answers based on my linked-in profile")
 
 # ----- Sidebar: Profile settings -----
 with st.sidebar:
-    st.header("🧩 Your profile")
+    st.header("🧩 My profile")
     st.write("Fill these fields — they prime the assistant about you.")
     name = st.text_input("Name", value="Angela Beesley")
     roles = st.text_input("Roles / Titles", value="R&D Engineering Lead; MBA candidate")
