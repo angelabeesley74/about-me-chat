@@ -13,7 +13,7 @@ except Exception as e:
 # ----- App Title -----
 st.set_page_config(page_title="About Angela Beesley Chat", page_icon="💬")
 st.title("💬 Chat with Angela Beesley")
-st.caption("This is my personal chat box that answers based on my linked-in profile")
+st.caption("This chat tool reflects information drawn from my professional background. If you require additional detail or verification, please reach out to me on LinkedIn: https://www.linkedin.com/in/angela-beesley-9b859836/")
 
 # ----- Sidebar: Profile settings -----
 with st.sidebar:
