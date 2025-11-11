@@ -80,9 +80,9 @@ if st.session_state.messages and st.session_state.messages[0]["role"] == "system
 # ----- Suggested prompts -----
 suggested = [
     "What is your area of expertise?",
-        "How many years experience do you have on your role as Engineer Leader and/or Manager?",
+        "How many years experience do you have?",
         "What are your strenghts?",
-        "What is your most important qualifications?",
+        "What is your highest qualifications?",
         "What role did you enjoy the most in your career?",
         "What type of leader are you?"
 ]
