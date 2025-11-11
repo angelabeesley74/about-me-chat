@@ -92,13 +92,13 @@ if st.session_state.messages and st.session_state.messages[0]["role"] == "system
 # ----- Suggested prompts -----
 suggested = [
     "What is your area of expertise?",
+    "Tell me about your leadership style",
+    "What motivates you?"
+    "Where do you see your next career step?"
         "How many years experience do you have?",
         "What are your strenghts?",
         "What role did you enjoy the most in your career?",
-        "What type of leader are you?",
-        “Tell me about your leadership style”,
-        “What motivates you?”,
-        “Where do you see your next career step?”
+        "What type of leader are you?"
 ]
 
 with st.expander("✨ Try a suggested prompt"):
