@@ -2,6 +2,15 @@
 import os
 import json
 import streamlit as st
+from pathlib import Path
+
+# Load Knowledge Base (kb.md)
+kb_text = ""
+kb_file = Path("kb.md")
+if kb_file.exists():
+    # limit length so prompt stays efficient
+    kb_text = kb_file.read_text(encoding="utf-8")[:15000]
+
 
 # --- OpenAI Python SDK (>=1.0) ---
 try:
@@ -65,6 +74,9 @@ Instead, speak as **“I”, “me”, and “my experience.”**
 
 [USER PROFILE JSON]
 {json.dumps(profile_dict, indent=2)}
+
+[KNOWLEDGE BASE]
+{kb_text}
 '''
 
 # ----- Session state for chat history -----
