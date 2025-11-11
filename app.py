@@ -94,9 +94,11 @@ suggested = [
     "What is your area of expertise?",
         "How many years experience do you have?",
         "What are your strenghts?",
-        "What is your highest qualifications?",
         "What role did you enjoy the most in your career?",
-        "What type of leader are you?"
+        "What type of leader are you?",
+        “Tell me about your leadership style”,
+        “What motivates you?”,
+        “Where do you see your next career step?”
 ]
 
 with st.expander("✨ Try a suggested prompt"):
