@@ -1,80 +1,113 @@
 # Dr Angela Beesley — Knowledge Base
 
 ## Professional Profile
-Highly qualified engineering leader with extensive experience directing multidisciplinary R&D teams, establishing engineering processes, managing regulated product development, and ensuring certification and Quality Management System compliance. Demonstrated success in leading global engineering programs and technical project delivery across scientific instrumentation, aerospace actuation systems, and in-vitro diagnostics. Experienced in full systems development lifecycle, customer requirements capture, risk management, design assurance, validation, and production transfer. Strong communication, stakeholder engagement, and supplier management capabilities.
+I am an engineering leader who combines transformational vision with servant leadership, enhancing teams’ confidence, technical excellence, and cross-functional cohesion in complex, regulated environments. My career spans aerospace, scientific instrumentation, machine learning, high-throughput systems, and R&D leadership in global settings—sectors where clarity of architecture, disciplined execution, and empowered teams are essential to success. 
 
-## Education & Qualifications
-- MBA, University of Wolverhampton, UK (2025)
-- PRINCE2 Practitioner, Axelos, UK (2019)
-- Level 5 Leadership & Management, ILM, UK (2015)
-- PhD, Physics, University of Liverpool, UK (2004)
-- MSc, Materials Science (First Class), Advanced Materials Research Centre, Mexico (2000)
-- BSc, Chemistry (First Class), State University of Engineering, Peru (1998)
+As R&D Engineering Lead at Thermo Fisher Scientific, I shape systems architectures, elevate engineering culture, and drive high-performing teams working across the UK and US. I work closely with senior management stakeholders to influence strategy and roadmap decisions, ensuring that engineering capability aligns with long-term business goals. My leadership style is grounded in approachability, structured thinking, and a commitment to helping people thrive. 
 
-## Career Summary
+Earlier in my career, I delivered safety-critical actuation systems for Leonardo Helicopters, Piaggio Aero and Airbus; drove system processes for LC/MS IVD platform; advanced high-throughput analytical science at Unilever and AstraZeneca; and pioneered automated microreactor/XAS methodologies at the University of Manchester. Across each role, I have mentor teams, strengthened processes, and resolved some of the most technically demanding architectural and regulatory challenges. 
 
-### European Union
-**Expert Reviewer & Rapporteur (2019–Present)**  
-Reviewer for MSCA Horizon Doctoral Networks and MSCA Postdoctoral Fellowships evaluations.
+I also serve as an EU Expert Reviewer & Rapporteur for Horizon Europe, supporting the evaluation of high-impact innovation across Europe. Outside work, I’m dedicated to aerial sports and endurance running—disciplines that reinforce resilience, focus, and continuous improvement.
 
-### Thermo Fisher Scientific
-**R&D Engineering Lead (2021–Present)**  
-- Lead global team of >20 engineers across Sustaining & NPI programs.
-- Introduced systems architecture and user-centric R&D approach.
-- Defined and implemented product & user requirements processes (incl. FDA 21 CFR Part 11).
-- Led risk management and FMEAs across NPI lifecycles.
-- Directed ATEX, IECEx, and CSA certification activities; primary liaison with notified bodies.
-- Ensured compliance with QMS and supported ISO 9001 and QAN/QAR audits.
-- Implemented Agile practices in cross-functional engineering teams.
-- Ensured global regulatory compliance across Sustaining and NPI products.
-- Led safety enhancement rollout for certified product to avoid recall.
-- Managed engineering change processes and harmonized QMS systems.
-- Reviewed and approved software, hardware, and test documentation to spec.
-- Led IP development resulting in a successful patent submission.
+## Education
+### BSc Degree (Licenciatura) – Universidad Nacional the Ingenieria (UNI) Lima–Peru 1992-1997
+I studied Chemistry degree at the Universidad Nacional de Ingenieria (UNI) in Lima-Peru. As part of the degree program a Thesis and examined public dissertation is mandatory. My research was on tungsten-based films focused on WOₓPᵧ and phosphotungstic acid thin films produced by spray pyrolysis and spray-gel methods. The studies examined film structure, roughness, optical transparency, coloration efficiency, and electrochemical behaviour. The key insights showed that controlling film porosity, composition, and deposition temperature improves electrochromic performance, enabling faster switching, higher optical contrast, and better stability.
+These findings directly support applications such as smart windows, energy-efficient displays, and electrochromic devices, where reliable colour change, durability, and low-cost scalable fabrication are essential.
+I was the top student of my year.
+Fun fact about UNI, UNI was created in response to Peru’s need in the 19th century for domestic engineers to support mining, infrastructure, communications and civil works. It is widely regarded as one of Peru’s most prestigious institutions for engineering, science and architecture.  It has an extremely selective admission process: the acceptance rate is reported to fall in the range of 0-9 %. Currently only ~15% of students are women.
 
-### Triumph Integrated Systems
-**Control Systems Consultant (2020–2023)**  
-Verification, traceability, and certification support for the horizontal tail actuator system (Airbus A330).
+### MSc Degree – Centro de Investigacion en materiales avanzados (CIMAV), Chihuahua - Mexico, 1998-2000
+My MSc in Materials Science and my PhD in Physics were both in the Condensed Matter Physics area related specialized in magnetism. Both degrees involved fundamental research.
+My MSc investigated how co-precipitated cobalt ferrite responds to magnetic fields. The studies showed that its behaviour is mainly controlled by domain-wall motion, where walls move and jump over defects, causing irreversible changes. At higher fields, magnetisation shifts toward moment rotation, which is more reversible. Measurements of remanence reveal that particles interact mostly through dipolar interactions, reflecting structural disorder and explaining the broad range of switching fields. The material also shows time-dependent magnetisation, meaning it continues to change after the field is altered. 
+This is important because magnets need stable magnetisation and high coercivity, knowing the exact mechanism of magnetisation reversal lets designers tune processing parameters to produce magnets that resist demagnetisation in motors, sensors, and actuators.
 
-### Waters Corporation
-**Principal Systems Engineer (2020–2021)**  
-- Led LC/MS system architecture for Newborn Screening IVD platform.
-- Managed Class B software development for assay execution.
-- Mapped IEC/ISO certification pathways to GB/T standards for China compliance.
-- Led cybersecurity threat modeling for LC/MS instruments.
-- Conducted risk management and system requirements alignment processes.
+### PhD degree – University of Liverpool, Liverpool,- United Kingdom (2001-2005)
+I was honoured to obtain an ORS Award in 2001 to study my PhD, ORS was a UK-wide scheme established to attract high-calibre overseas postgraduate research students to UK higher education institutions. Today ORS awards are not provided anymore, in 2008–09, the UK funding bodies decided to phase out the scheme.
 
-### Triumph Group — Integrated Systems (Aerospace)
-**Engineering Project Manager & IPT Lead (2015–2020)**  
-- Led cross-functional engineering teams for >10 NPI programs.
-- Actuation systems product owner; coordinated design milestones (JDP, SRR, PDR, CDR, TRR).
-- Managed budget (~£5M), project risks, cost forecasts, and qualification planning.
-- Supported AS9100 audit cycle and customer communications.
-- Oversaw supply chain and outsourced work packages.
+My research focused on the study of uranium/iron multilayers fabricated by sputtering,  it provided one of the first clear demonstrations that uranium can become magnetic when placed in contact with iron. It showed that this induced magnetism is small but real, confined to just a few atomic layers, and driven by 5f–3d hybridisation—an essential benchmark for theorists modelling actinide electrons. My work also revealed how strongly this magnetism depends on interface quality: even slight intermixing or roughness changed the Fe magnetisation, the size of magnetic dead layers and the strength of the induced U moment. Because the samples were precisely characterised, they became reliable reference systems, allowing the separation of Fe, U and interface contributions and to validate models involving 5f electrons and strong spin–orbit coupling. By combining sputtering, X-ray (XMCD), resonant reflectivity, neutron reflectometry and Mössbauer techniques, my work also expanded the experimental toolkit for studying actinide thin films. Together, these insights directly connect to the materials and principles underlying quantum technologies today, especially in areas involving spin–orbit coupling, magnetic interfaces, quantum materials engineering, and thin-film heterostructures.
 
-### Triumph Actuation Systems UK & IOM
-**Principal Systems Modelling Analyst (2013–2015)**  
-**Control Systems Design Engineer (2011–2013)**  
-- Developed control algorithms for EMAs and flight systems for aerospace customers.
-- Led system-level architecture from RFI through qualification and production.
-- Developed MATLAB/Simulink models; performed DO178C verification.
-- Conducted DFMEA, FMECA, and safety/reliability analyses.
+### MBA degree, University of Wolverhamptom, Wolverhamptom, UK, (2023-2025)
+I studied an online MBA program, my dissertation examined how technology-sector professionals can build accessible quantum fluency to engage responsibly with emerging quantum technologies. Using surveys, interviews, and literature analysis, it finds high curiosity but shallow understanding, significant skills gaps, and limited organisational readiness. Respondents value practical applications—simulation, optimisation, sustainability, and cybersecurity—yet lack clarity on timelines and relevance to their roles. The study proposes a five-stage pathway combining awareness, strategic assessment, investment, targeted upskilling, and cross-sector collaboration. This research is important because industries are moving toward quantum-enabled capabilities faster than their workforces can understand or adopt them. Your study shows that the real bottleneck is not quantum hardware—it is organisational knowledge, leadership strategy, and workforce preparedness. By identifying concrete skills gaps, discipline-specific attitudes, and preferred learning pathways, the research offers a practical roadmap for companies to build quantum-ready cultures without requiring every employee to become a physicist.
 
-### Unilever
-**Mathematics & Informatics Scientist (2008–2011)**  
-- Developed evolutionary optimization algorithms for multi-objective product formulation.
-- Built QSAR, CART, Pareto and Bayesian modelling frameworks.
-- Designed high-throughput optimization pipelines for personal/home care products.
+# Career
 
-### AstraZeneca (Contract, 6 months, 2008)
-- Developed AZSDS software for PCA and clustering of drug dispersion analysis.
-- Automated XRD and optical microscopy workflows for high-throughput screening.
+## Research Associate (Postdoctoral position) at the School of Chemical Engineering at the University of Manchester, Manchester, UK (2005-2008)
+After completing my PhD I started my first position as a Research Associate (Postdoctoral position) at the School of Chemical Engineering at the University of Manchester.
+My research focused on transforming how we study chemical systems—moving from slow, static measurements to agile, high-throughput, in situ discovery. It began with the development of microreactor and continuous-flow cells for X-ray absorption spectroscopy, compact systems that enabled rapid and reproducible structural measurements under tightly controlled conditions. These early innovations overcame long-standing limitations of traditional static cells and opened the door to capturing real-time structural changes across large sample sets.
+Building on this foundation and together with PhD students we worked on the creation of fully automated high-throughput EXAFS instrumentation, Mass Spectrometry, integrating reactor engineering, robotics and software-driven acquisition into a single pipeline. This platform made it possible to synthesise and characterise catalysts and functional materials with minimal manual intervention, anticipating many of the high-throughput materials-discovery strategies widely adopted today.
+These tools were applied in diverse contexts, including the rapid mapping of nobel metal catalysts, mixed-oxide catalysts and the development of a low-cost in situ platform for probing liquid systems, dynamic combinatorial chemistry and multiphase formulations. By lowering barriers to high-value structural techniques, this work broadened access for researchers seeking to link structure and function more efficiently.
+Alongside these engineering contributions, I explored structure–property relationships in solid Lewis acids such as AlF₃, using advanced spectroscopy to show how subtle changes in lattice order and fluorination shape catalytic behaviour. The research extended to mechanistic studies as well, including the use of a continuous tubular flow reactor for XAFS analysis of organometallic reactions such as the Soai system. This approach allowed capturing transient intermediates that are normally inaccessible, revealing dynamic pathways hidden within complex reaction networks.
 
-### University of Manchester
-**Research Associate (2004–2007)**  
-- Designed high-throughput microreactor system with in-situ mass spectrometry.
-- Led liquid flow reactor development validated at synchrotron beamlines.
-- Delivered EPSRC project deliverables and managed supplier development.
+## AstraZeneca, Senior Scientist, 2008 (6 months contract)
+During a six-month contract at AstraZeneca, I delivered work that advanced the company’s capability to screen and understand drug solid dispersions. In that short timeframe, I established a high-throughput protocol that enabled rapid preparation and characterisation of large cancer drug dispersion libraries. I also developed automated scripting tools for XRD and optical microscopy that allowed up to 96 samples to be analysed in a single day.
+My main contribution was the development of a dedicated MATLAB application that integrated peak-detection algorithms, PCA, hierarchical clustering, and multimodal data visualisation for XRD, Raman, microscopy, and polarised-microscope images. The tool processed raw spectra, generated correlation maps, performed PCA scoring and loadings analysis, and enabled clustering across multiple analytical techniques.
+In short, I delivered an end-to-end high-throughput framework that accelerated formulation decision-making, reduced manual interpretation, and modernised data handling in solid-dispersion screening. My work contributed to shift pharmaceutical materials characterisation toward more automated, data-driven approaches.
+
+## Unilever, Maths and Informatics Scientist, Wirral, UK (2008-2011)
+During my time at Unilever, I worked as a Maths and Informatics Scientist within a specialist team that operated independently to support a wide range of R&D groups. My work sat at the intersection of computational modelling, formulation science, and high-throughput experimentation, and my focus was on helping the business develop new formulations, enter new markets, and significantly reduce development time. Looking back, this remains the role I enjoyed the most—it was the perfect blend of scientific creativity, complex problem-solving, and hands-on impact.
+A large part of my contribution involved bringing advanced optimisation and modelling approaches into everyday formulation workflows. I implemented nature-inspired evolutionary algorithms, including a bee-based optimisation method that had only recently appeared in academic literature. This became one of the achievements I am most proud of—its simplicity and accuracy allowed it to outperform traditional Genetic Algorithms in some applications, and it was adopted into daily workflows for mayonnaise formulation across Unilever US sites, where it continued to be used long after I left.
+In the Personal and Home Care area, I developed closed-loop high-throughput optimisation systems by combining Genetic Algorithms, robotic platforms, and UV-vis analytical techniques. These systems allowed us to explore large formulation spaces efficiently—for example, identifying synergistic antiperspirant mixtures that were far more effective at reducing malodour by evolving increasingly fit populations of formulations through iterative GA cycles.
+Alongside optimisation, I built atomistic and first-principles models to understand the behaviour and stability of sunscreens, and carried out protein docking and interaction studies that supported ingredient selection across food, skincare, and personal care formulations.
+To expand the range of options available to formulation teams, I developed numerous QSAR models (both qualitative and quantitative) and used Bayesian inference, CART models, clustering, and Forest-of-Trees approaches to propose alternative compounds. These were linked directly to commercial chemical databases, helping teams explore new markets and identify more sustainable ingredients.
+Throughout this work, I also raised the modelling capability across the organisation, becoming a recognised internal point of reference for computational and data-driven approaches. I regularly collaborated with global R&D teams, worked closely with senior scientists, occasionally engaged with directors, and presented my findings through detailed internal reports and formal presentations. My involvement helped shift teams toward more data-driven, model-supported decision-making.
+
+## TRIUMPH Actuation Systems UK & IOM - (Aerospace), North Wales, UK
+### Principal Systems Modelling Analyst (2013-2015)
+### Control Systems Design Engineer (2011-2013)
+
+When I joined Triumph Group, I stepped into one of the most challenging but rewarding roles of my career: designing and modelling flight-critical actuation systems for major aerospace OEMs, including Airbus, Piaggio, Leonardo Helicopters, and BAE. These were customer-driven, safety-critical programmes where every decision mattered.
+Most of my work centred on electromechanical actuators (EMAs) for platforms ranging from civil tilt-rotor aircraft to commercial airplanes. I designed and implemented control systems for cyclic, collective & horizontal trim actuators, flap actuators, aircraft doors, and ground-use prototype EMAs. I also delivered the control system for a radar repositioner and analogue control systems for ground actuation units. One of the most technically intense efforts was developing the synchronisation algorithm for a 3-EMA flap and trim system, which was later validated through experimental flight testing .
+As part of my modelling and control work I full MATLAB/Simulink System Architecture models, capturing everything from motor dynamics and gearbox nonlinearities to friction, stiction, filtering, and analogue electronics. In many programmes, the simulation models weren’t just internal tools — they were contractual artefacts delivered to customers under DO-178C, which were then translated directly into embedded C-code software. The model  complexity was amplified by incomplete plant models: the mechanical stiffness, spring constants, loads, and thermal effects often weren’t fully known at the start, so I had to iteratively reconcile theory with experimental data until the models became trustworthy.
+As the integration point between Hardware, Software, Mechanical and Controls Engineering, I routinely navigated the practical constraints of real aerospace design. For example, mechanical teams set the loads and stiffness’s, which drove start-up currents, regeneration currents, resonance zones, and thermal behaviour. These, in turn, dictated electronic board design, PWM chip selection, current protection components, and the filtering strategy required for stability. The control architecture, bandwidth, sampling times, and stability margins depended on all of these factors working in harmony — and I was the person ensuring they did.
+Testing was equally hands-on. Our units were taken to accredited aerospace test houses for RTCA DO-160 and EASA CS-23/CS-27 compliance, and during prototype trials I personally diagnosed and solved issues such as jittery behaviour by adjusting filters and refining motor control logic. My work on safety and reliability — DFMEA, FMECA, SSA — focused on preventing hazards such as runaway actuators, loss of position feedback, resonance-induced instability, motor stall, and single-event failures. I was heavily involved in root-cause investigations as well, ensuring the final systems could be certified and trusted.
+What I enjoyed most at Triumph was the cross-disciplinary intensity and the flight-critical stakes. Nothing was abstract: every model, every filter, every timing decision translated directly into aircraft behaviour. And while the pressure was real — customers pushing for performance, deadlines, and proofs of stability — the technical challenge made the work deeply satisfying. My proudest achievement was modelling the complete EMA control system for the tilt-rotor aircraft. Although that aircraft only performed ground tests during my time there, the actuation system behaved exactly as the model predicted, and that was a moment of real professional pride.
+This role shaped how I work technically today: it taught me how to build trustworthy models from incomplete information, how to lead integration across disciplines, and how to engineer systems that hold up under a strict regulated industry.
+
+## TRIUMPH Group - Integrated Systems (Aerospace), North Wales, UK
+### Engineering Project Manager (2015-2020)
+When I was promoted to Engineering Project Manager at Triumph Group, I stepped into programmes facing new customer contracts, certification bottlenecks, and clear resourcing pressures. I took ownership of the Trim, Flap, and Digital electronic module (DEM) actuators, gaining responsibility not only for the engineering delivery but also for budgets, cross-site coordination, customer interaction, documentation packages, and root-cause analysis.
+I led a multi-disciplinary team spanning systems, electronics, mechanical, software, test, manufacturing, and several contractors. Day-to-day, I coordinated the programme through daily stand-ups, technical reviews, design boards, certification reviews, and risk logs. Trade-offs were common — timelines, resource allocation, costs — but never design integrity or quality, given the safety-critical nature of flight-control components.
+The technical challenges were real. Sourcing AS9100-certified suppliers proved difficult, and internal quality scrutiny was intense by necessity, which often slowed progress but guaranteed safety. Mechanically, gear and bearing selection became a recurring challenge due to weight, size and life time constraints. I led failure investigations, particularly vibration and thermal-performance issues, and translated technical detail into programme actions through prioritisation, stakeholder updates, and risk-based decision making.
+I worked with Airbus, Piaggio Aero, Leonardo, Leonardo Helicopters, and BAE, but my primary EPM responsibility was with Leonardo. Alongside that, I was the control-system design authority across the other programmes. I led all customer-facing engagements — technical reviews, audits, evidence presentations, and negotiation of tests and concessions — and for periods I also acted as Program Manager, I was blessed to have a supportive and bright team. My team delivered every artefact required: requirements, drawings, electronic schematics, software, test schedules, reports, and first-article inspections.
+Despite the challenging environment, I kept programmes moving and brought them through qualification testing. I also played a major role in improving processes, helping align the QMS between Triumph Deeside and Gloucester sites, establishing strong communication channels and leading technical governance. I’m proud of guiding projects from majoir stage gauges such as SSR, PRD through CDR achieving design freeze.
+I was promoted because of my technical credibility, initiative, and ability to bridge engineering with programme needs. Aerospace brings discipline: roles, responsibilities, and processes are clearly defined, and that clarity helped me empower the team. My role also allowed me to step into sourcing and manufacturing areas, where I learned first-hand that on-the-ground experience is as valuable as academic knowledge. Speaking directly with assemblers and manufacturing engineers shaped my understanding — and sharpened my ability to challenge engineering teams constructively.
+That habit of communicating widely across the business remains with me today. Working with diverse teams across the globe.
+
+## WATERS Corporation
+### Principal Systems Engineer (2020-2021)
+When I transitioned from Triumph Group to Waters Corporation, it was a completely different environment, yet I quickly realised that everything I had learned from aerospace—discipline, structure, systems thinking, and the rigor of AS9100 and DO-178C—could be directly applied to IVD and LC/MS systems development. At Waters, I stepped into the role of Principal Systems Engineer, leading the systems architecture and product requirements for an LC/MS IVD platform designed specifically for New Born Screening.
+I brought a systems mindset from actuation systems, using that experience to drive a more efficient path toward IVD implementation. One of my first priorities was to commonalise the diverse LC/MS product platforms by defining a coherent, scalable architecture that integrated subsystems such as the mass spectrometer, liquid chromatograph, autosampler, and user interface. I translated complex user requirements into clear, structured system product requirements and developed detailed system models that captured feature-level behaviour and user experience.
+The IVD platform introduced several challenges—particularly China certification. Aligning IEC and ISO standards with GB/T requirements was far from straightforward, but I mapped the equivalencies and identified gaps to accelerate the certification pathway. Risk management was equally demanding. Unlike aerospace, where risks are usually built bottom-up, in the IVD context the most efficient approach was a top-down construction of the risk register. I led these activities, ensuring that risks were visible early and that control assessments met regulatory expectations.
+Cybersecurity was another core pillar of my work. I directed the threat modelling exercise and led the discussions around access control, authentication mechanisms, and how to manage the different threat zones within the instrument. The challenge was always finding the right balance between real risk and usability—protecting critical assets without creating unnecessary burden for the user. This influenced architectural decisions such as closing USB ports on certain boards and designing a clear role-based access model.
+My day-to-day work involved constant collaboration with systems architects, software teams, regulatory specialists, and MS experts. I facilitated requirement-capture workshops, FMEA sessions, cybersecurity reviews, systems modelling activities, and architectural discussions. I became the technical authority for the IVD systems work, mentoring new systems engineers and supporting the project manager with clarity, structure, and forward momentum.
+A key outcome of my time at Waters was how much I unblocked for the wider project. I accelerated certification planning, unblocked the software development team by providing clear requirements and architectural boundaries, exposed hidden risks, and delivered high-impact documentation—architecture maps, requirement matrices, cybersecurity guidance, and risk-based frameworks—that became reference materials for the broader organisation.
+What I enjoyed the most was that, unlike aerospace where systems are designed under specific bids, LC/MS IVD systems were built for thousands of customers. It was the first time I experienced designing a scalable architecture capable of supporting hundreds of instruments in a single installation. That shift—from bespoke to platform—gave me a completely new appreciation for productised systems engineering and was one of the highlights of my time at Waters.
+
+## Parallel Work for Triumph Group - Control Systems Consultant (2020 – 2023)
+While working full-time at Waters, I continued consulting for Triumph Group to support the completion and verification of the Direct Electronic Module (DEM) used to control the horizontal tail actuator on the Airbus A330. My focus was ensuring full traceability to the control system requirements, overseeing the design finalisation, and validating that the system met stringent aerospace certification and performance criteria. This work allowed me to maintain continuity with the actuation systems I had previously led, ensuring Triumph successfully delivered a fully compliant, rigorously verified system to Airbus.
+
+## THERMOFISHER SCIENTIFIC
+### R&D Engineering Lead (2021-Present)
+As R&D Engineering Lead at Thermo Fisher Scientific – Winsford UK, I drive global R&D strategy across Process Gas Analyser product lines, leading a team of 10+ multidisciplinary engineers across the UK and US. I combine a transformational and servant-leadership approach with deep technical authority to modernise engineering culture, strengthen cross-site collaboration, and elevate the Winsford site as a centre of excellence.
+I mentor engineers by teaching multiple problem-solving approaches, breaking complex challenges into actionable tasks, strengthening system-level thinking, and using AI tools to improve efficiency. When I joined, the UK team lacked confidence engaging with US counterparts. I rebuilt this dynamic entirely—establishing shared Teams channels, JIRA/Confluence workspaces, architecture reviews, and multi-site workshops. This empowered engineers to collaborate directly, present their expertise internationally, and ultimately travel to the US as trusted technical authority.
+I lead Systems Architecture for all instruments designed at the Winsford site, defining system architectures, functional requirements such as HW/SW partitioning, data flows, cybersecurity requirements, and non-functional requirements such as scalability, availability, performance and regulatory compliance. I maintain full architectural artefacts (system context diagrams, SysML models, interface definitions, safety architectures) in accessible repositories such as Confluence or Sharepoint. I have resolved several global architecture disagreements, including driving the adoption of a webserver–client microservice architecture to replace legacy remote-desktop-dependent interfaces.
+I introduced the site’s first long-term R&D systems engineering mindset by creating a systems architecture and requirements, built on modularity, and user-centric design validated through extensive VOC work and customer-site assessments. This has become standard practice across the business unit.
+My Ex/ATEX/IECEx/CSA expertise spans design, certification, and technical authority. I have led numerous successful certifications and prevented the withdrawal of a Total Sulfur analyser’s Ex certificate by demonstrating compliance through detailed technical justification. I recovered multiple projects at risk by working directly with Notified Bodies, explaining architectural safeguards, validating designs, and avoiding costly redesigns. I led a global safety enhancement rollout to prevent potential temperature-related ignition risks, correcting software calculations, addressing sensor lag, and introducing additional thermal protection. I routinely coach engineers on Ex design principles and ensure all designs incorporate regulatory and regional compliance requirements.
+I drive risk management across projects, leading FMEA and HAZOP reviews that directly informed design changes—such as identifying a previously overlooked hazardous failure mode in a purged pump system. I also led a global software update to prevent potential temperature runaway conditions in Ex systems.
+My commitment to quality is equally strong. I harmonised UK and US R&D QMS practices to align with stage-gate frameworks, improved audit readiness, and supported QAN/QAR audits with rapid corrective-action turnaround (typically within two weeks). UK Winsford processes are frequently highlighted as Quality exemplars.
+I spearheaded the introduction of Agile delivery, implementing JIRA/Confluence to manage not only software but system-wide issues. This improved throughput, transparency, knowledge-sharing, and cross-site collaboration. Teams now work more autonomously, prioritise effectively, and maintain end-to-end ownership of their deliverables.
+Innovation is a core part of my leadership. I encourage engineers to think boldly, challenge assumptions, and propose unconventional ideas. I run innovation workshops and have led invention-disclosure efforts, including a patent filed for eliminating false oversaturation signals in flare-gas concentration measurements—validated through modelling and refined by the team.
+Beyond technical leadership, I operate at a strategic and commercial level. I communicate daily with director-level stakeholders across R&D, Operations, Marketing, and Product Management. I contribute directly to the Annual Operating Plan (AOP) and long-term divisional roadmaps, including financial modelling, project prioritisation, and market-impact assessments. Close alignment with Marketing ensures that R&D investment is tightly coupled to market needs, competitive differentiation, and revenue growth opportunities. This strategic integration strengthens Thermo Fisher’s ability to expand into new markets, increase market share, and deliver customer-centric innovation.
+My work has driven measurable improvements in uptime, field performance, manufacturability, and serviceability, such as enhanced diagnostics and improved temperature control in cold environments. I actively contribute to divisional roadmaps and advocate for projects that expand market share or open new market segments.
+I define my leadership style as transformational: I seek better ways to do things and better things to do, empower engineers to make confident decisions, set a clear architectural vision, and remove obstacles so the team can excel. I am known as an approachable, systematic mentor who provides strong technical and career guidance and always gets things done.
+
+# Professional Affiliations / Additional Roles
+EU Expert Reviewer & Rapporteur (Horizon Europe Framework Programme) — 2019–Present
+For the past five years, I have also served as an EU Expert Reviewer and Rapporteur for Horizon Europe projects, evaluating high-impact research and innovation proposals.
+IET member.
+
+# Hobbies
+Aerial Sports & Fitness – I have trained in aerial hoop and pole for the past 10 years and I intend to work towards an instructor qualification. I also enjoy endurance running, regularly completing 10K and half-marathon events, and previously completed a full marathon in 2015.
 
 ## Skills
 
@@ -89,7 +122,7 @@ Verification, traceability, and certification support for the horizontal tail ac
 - MATLAB, Simulink, LabVIEW
 - SciTegic Pipeline Pilot, Schrödinger Suite
 - AWS architecture basics
-- Programming: Fortran, C, Perl, R
+- Programming: Fortran, C, Python
 
 ### Languages
 - English (Fluent)
@@ -99,3 +132,4 @@ Verification, traceability, and certification support for the horizontal tail ac
 - Citizenship: British and Peruvian
 - Driving License: Full
 - Health: Excellent; non-smoker
+
