@@ -52,6 +52,7 @@ To expand the range of options available to formulation teams, I developed numer
 Throughout this work, I also raised the modelling capability across the organisation, becoming a recognised internal point of reference for computational and data-driven approaches. I regularly collaborated with global R&D teams, worked closely with senior scientists, occasionally engaged with directors, and presented my findings through detailed internal reports and formal presentations. My involvement helped shift teams toward more data-driven, model-supported decision-making.
 
 ## Principal Systems Modelling Analyst (2011-2015), TRIUMPH Group (Aerospace), North Wales, UK
+
 When I joined Triumph Group, I stepped into one of the most challenging but rewarding roles of my career: designing and modelling flight-critical actuation systems for major aerospace OEMs, including Airbus, Piaggio, Leonardo Helicopters, and BAE. These were customer-driven, safety-critical programmes where every decision mattered.
 Most of my work centred on electromechanical actuators (EMAs) for platforms ranging from civil tilt-rotor aircraft to commercial airplanes. I designed and implemented control systems for cyclic, collective & horizontal trim actuators, flap actuators, aircraft doors, and ground-use prototype EMAs. I also delivered the control system for a radar repositioner and analogue control systems for ground actuation units. One of the most technically intense efforts was developing the synchronisation algorithm for a 3-EMA flap and trim system, which was later validated through experimental flight testing .
 As part of my modelling and control work I full MATLAB/Simulink System Architecture models, capturing everything from motor dynamics and gearbox nonlinearities to friction, stiction, filtering, and analogue electronics. In many programmes, the simulation models weren’t just internal tools — they were contractual artefacts delivered to customers under DO-178C, which were then translated directly into embedded C-code software. The model  complexity was amplified by incomplete plant models: the mechanical stiffness, spring constants, loads, and thermal effects often weren’t fully known at the start, so I had to iteratively reconcile theory with experimental data until the models became trustworthy.
@@ -83,8 +84,8 @@ What I enjoyed the most was that, unlike aerospace where systems are designed un
 ## Consultant in Control Systems- Parallel Work, Triumph Group (2020 – 2023)
 While working full-time at Waters, I continued consulting for Triumph Group to support the completion and verification of the Direct Electronic Module (DEM) used to control the horizontal tail actuator on the Airbus A330. My focus was ensuring full traceability to the control system requirements, overseeing the design finalisation, and validating that the system met stringent aerospace certification and performance criteria. This work allowed me to maintain continuity with the actuation systems I had previously led, ensuring Triumph successfully delivered a fully compliant, rigorously verified system to Airbus.
 
-## THERMOFISHER SCIENTIFIC
-### R&D Engineering Lead (2021-Present)
+## R&D Engineering Lead (2021-Present) THERMOFISHER SCIENTIFIC
+ 
 As R&D Engineering Lead at Thermo Fisher Scientific – Winsford UK, I drive global R&D strategy across Process Gas Analyser product lines, leading a team of 10+ multidisciplinary engineers across the UK and US. I combine a transformational and servant-leadership approach with deep technical authority to modernise engineering culture, strengthen cross-site collaboration, and elevate the Winsford site as a centre of excellence.
 I mentor engineers by teaching multiple problem-solving approaches, breaking complex challenges into actionable tasks, strengthening system-level thinking, and using AI tools to improve efficiency. When I joined, the UK team lacked confidence engaging with US counterparts. I rebuilt this dynamic entirely—establishing shared Teams channels, JIRA/Confluence workspaces, architecture reviews, and multi-site workshops. This empowered engineers to collaborate directly, present their expertise internationally, and ultimately travel to the US as trusted technical authority.
 I lead Systems Architecture for all instruments designed at the Winsford site, defining system architectures, functional requirements such as HW/SW partitioning, data flows, cybersecurity requirements, and non-functional requirements such as scalability, availability, performance and regulatory compliance. I maintain full architectural artefacts (system context diagrams, SysML models, interface definitions, safety architectures) in accessible repositories such as Confluence or Sharepoint. I have resolved several global architecture disagreements, including driving the adoption of a webserver–client microservice architecture to replace legacy remote-desktop-dependent interfaces.
@@ -104,7 +105,7 @@ For the past five years, I have also served as an EU Expert Reviewer and Rapport
 IET member.
 
 # Hobbies
-Aerial Sports & Fitness – I have trained in 'Aerial Hoop' and 'Pole Fitness' for the past 10 years and I intend to work towards an instructor qualification. I also enjoy endurance running, regularly completing 10K and half-marathon events, and previously completed a full marathon in 2015.
+Aerial Sports & Fitness – the disciplines in Aerial sports I focus on are 'Aerial Hoop' and 'Pole Fitness' I have been doing this for the past 10 years and I intend to work towards an instructor qualification. I also enjoy endurance running, regularly completing 10K and half-marathon events, and previously completed a full marathon in 2015.
 
 ## Skills
 
@@ -129,5 +130,6 @@ Aerial Sports & Fitness – I have trained in 'Aerial Hoop' and 'Pole Fitness' f
 - Citizenship: British and Peruvian
 - Driving License: Full
 - Health: Excellent; non-smoker
+
 
 
