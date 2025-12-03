@@ -1,0 +1,88 @@
+{
+    "name": "Dr Angela Beesley",
+    "professional_profile": "Engineering leader with transformational and servant-leadership style, spanning aerospace, scientific instrumentation, machine learning, high\u2011throughput systems, and global R&D leadership.",
+    "core_strengths": [
+        "Strategic R&D Leadership",
+        "Systems Engineering Authority",
+        "Cross-functional Team Development",
+        "Global Stakeholder Engagement",
+        "Regulatory & Safety Compliance",
+        "Programme Delivery",
+        "Risk, Quality & Certification Management",
+        "Innovation & Technology Road-mapping"
+    ],
+    "career_history": [
+        {
+            "role": "R&D Engineering Lead",
+            "company": "Thermo Fisher Scientific",
+            "years": "2021\u2013Present",
+            "summary": "Lead global R&D strategy, define system architectures, drive cross-site engineering culture, lead Ex/ATEX/IECEx certifications, manage risk and quality, contribute to AOP and long-term roadmaps."
+        },
+        {
+            "role": "Principal Systems Engineer",
+            "company": "Waters Corporation",
+            "years": "2020\u20132021",
+            "summary": "Led LC/MS IVD system architecture, cybersecurity strategy, China certification alignment, risk management, and requirements frameworks."
+        },
+        {
+            "role": "Engineering Project Manager",
+            "company": "Triumph Group",
+            "years": "2015\u20132020",
+            "summary": "Managed flight-critical actuator programmes, led cross-disciplinary teams, delivered certification artefacts, improved QMS processes."
+        },
+        {
+            "role": "Principal Systems Modelling Analyst",
+            "company": "Triumph Group",
+            "years": "2011\u20132015",
+            "summary": "Designed and modelled flight-critical EMAs under DO-178C; led controls integration and stability solutions."
+        },
+        {
+            "role": "Maths & Informatics Scientist",
+            "company": "Unilever",
+            "years": "2008\u20132011",
+            "summary": "Developed optimisation algorithms, QSAR models, and high-throughput formulation platforms; recognised authority in modelling."
+        },
+        {
+            "role": "Senior Scientist",
+            "company": "AstraZeneca",
+            "years": "2008",
+            "summary": "Built high-throughput solid-dispersion screening and MATLAB PCA/clustering tools."
+        },
+        {
+            "role": "Research Associate",
+            "company": "University of Manchester",
+            "years": "2005\u20132008",
+            "summary": "Developed microreactor XAS systems and automated EXAFS for high-throughput catalysis research."
+        }
+    ],
+    "education": [
+        "MBA \u2013 University of Wolverhampton (2023\u20132025)",
+        "PhD Physics \u2013 University of Liverpool (ORS Award) (2001\u20132005)",
+        "MSc Materials Science \u2013 CIMAV Mexico (1998\u20132000)",
+        "BSc Chemistry \u2013 UNI Peru (1992\u20131997)"
+    ],
+    "affiliations": [
+        "EU Expert Reviewer & Rapporteur \u2013 Horizon Europe"
+    ],
+    "skills": [
+        "Systems Engineering",
+        "Requirements & Architecture",
+        "Ex/ATEX/IECEx Certification",
+        "Programme Management",
+        "Risk & Quality Management",
+        "Agile Delivery",
+        "MATLAB",
+        "Simulink",
+        "DOORS",
+        "JIRA",
+        "Confluence",
+        "Enterprise Architect",
+        "Python",
+        "C",
+        "Fortran"
+    ],
+    "interests": [
+        "Aerial sports (Hoop & Pole)",
+        "Endurance running (10K, half-marathon, marathon 2015)"
+    ]
+}
