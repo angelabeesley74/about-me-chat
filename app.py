@@ -11,6 +11,9 @@ if kb_file.exists():
     # limit length so prompt stays efficient
     kb_text = kb_file.read_text(encoding="utf-8")[:15000]
 
+# Load CV (Angela_Beesley_CV.json)
+
+json_file = Path("Angela_Beesley_CV.json")
 
 # --- OpenAI Python SDK (>=1.0) ---
 try:
@@ -44,14 +47,40 @@ if clear:
     st.session_state.pop("messages", None)
 
 # ----- Build the system prompt from sidebar fields -----
-profile_dict = {
-    "name": name,
-    "roles": roles,
-    "organizations_sectors": orgs,
-    "interests": interests,
-    "achievements": achievements,
-    "tone": tone,
-}
+
+#profile_dict = {
+ #   "name": name,
+  #  "roles": roles,
+   # "organizations_sectors": orgs,
+    #"interests": interests,
+    #"achievements": achievements,
+    #"tone": tone,
+#}
+
+
+# ---- Read JSON profile ----
+profile_dict = {}
+if json_file is not None:
+    try:
+        profile_dict = json.load(json_file)
+    except Exception as e:
+        st.error(f"Could not parse JSON file: {e}")
+        profile_dict = {}
+else:
+    # Sensible default if no JSON is uploaded
+    profile_dict = {
+        "name": "Dr Angela Beesley",
+        "headline": "R&D Engineering Lead | Systems Engineer | MBA",
+        "summary": (
+            "Engineering leader with experience in aerospace, scientific instrumentation, "
+            "IVD/LC-MS, FMCG, and EU Horizon review. Strong in systems thinking, "
+            "regulatory compliance, and high-throughput/AI-assisted R&D."
+        )
+    }
+
+
+
+
 
 SYSTEM_PROMPT = f'''
 You are acting as a conversational avatar of the user. 
