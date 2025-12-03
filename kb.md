@@ -51,10 +51,7 @@ Alongside optimisation, I built atomistic and first-principles models to underst
 To expand the range of options available to formulation teams, I developed numerous QSAR models (both qualitative and quantitative) and used Bayesian inference, CART models, clustering, and Forest-of-Trees approaches to propose alternative compounds. These were linked directly to commercial chemical databases, helping teams explore new markets and identify more sustainable ingredients.
 Throughout this work, I also raised the modelling capability across the organisation, becoming a recognised internal point of reference for computational and data-driven approaches. I regularly collaborated with global R&D teams, worked closely with senior scientists, occasionally engaged with directors, and presented my findings through detailed internal reports and formal presentations. My involvement helped shift teams toward more data-driven, model-supported decision-making.
 
-## TRIUMPH Actuation Systems UK & IOM - (Aerospace), North Wales, UK
-### Principal Systems Modelling Analyst (2013-2015)
-### Control Systems Design Engineer (2011-2013)
-
+## Principal Systems Modelling Analyst (2011-2015), TRIUMPH Group (Aerospace), North Wales, UK
 When I joined Triumph Group, I stepped into one of the most challenging but rewarding roles of my career: designing and modelling flight-critical actuation systems for major aerospace OEMs, including Airbus, Piaggio, Leonardo Helicopters, and BAE. These were customer-driven, safety-critical programmes where every decision mattered.
 Most of my work centred on electromechanical actuators (EMAs) for platforms ranging from civil tilt-rotor aircraft to commercial airplanes. I designed and implemented control systems for cyclic, collective & horizontal trim actuators, flap actuators, aircraft doors, and ground-use prototype EMAs. I also delivered the control system for a radar repositioner and analogue control systems for ground actuation units. One of the most technically intense efforts was developing the synchronisation algorithm for a 3-EMA flap and trim system, which was later validated through experimental flight testing .
 As part of my modelling and control work I full MATLAB/Simulink System Architecture models, capturing everything from motor dynamics and gearbox nonlinearities to friction, stiction, filtering, and analogue electronics. In many programmes, the simulation models weren’t just internal tools — they were contractual artefacts delivered to customers under DO-178C, which were then translated directly into embedded C-code software. The model  complexity was amplified by incomplete plant models: the mechanical stiffness, spring constants, loads, and thermal effects often weren’t fully known at the start, so I had to iteratively reconcile theory with experimental data until the models became trustworthy.
@@ -63,8 +60,8 @@ Testing was equally hands-on. Our units were taken to accredited aerospace test 
 What I enjoyed most at Triumph was the cross-disciplinary intensity and the flight-critical stakes. Nothing was abstract: every model, every filter, every timing decision translated directly into aircraft behaviour. And while the pressure was real — customers pushing for performance, deadlines, and proofs of stability — the technical challenge made the work deeply satisfying. My proudest achievement was modelling the complete EMA control system for the tilt-rotor aircraft. Although that aircraft only performed ground tests during my time there, the actuation system behaved exactly as the model predicted, and that was a moment of real professional pride.
 This role shaped how I work technically today: it taught me how to build trustworthy models from incomplete information, how to lead integration across disciplines, and how to engineer systems that hold up under a strict regulated industry.
 
-## TRIUMPH Group - Integrated Systems (Aerospace), North Wales, UK
-### Engineering Project Manager (2015-2020)
+## Engineering Project Manager (2015-2020), TRIUMPH Group (Aerospace), North Wales, UK
+
 When I was promoted to Engineering Project Manager at Triumph Group, I stepped into programmes facing new customer contracts, certification bottlenecks, and clear resourcing pressures. I took ownership of the Trim, Flap, and Digital electronic module (DEM) actuators, gaining responsibility not only for the engineering delivery but also for budgets, cross-site coordination, customer interaction, documentation packages, and root-cause analysis.
 I led a multi-disciplinary team spanning systems, electronics, mechanical, software, test, manufacturing, and several contractors. Day-to-day, I coordinated the programme through daily stand-ups, technical reviews, design boards, certification reviews, and risk logs. Trade-offs were common — timelines, resource allocation, costs — but never design integrity or quality, given the safety-critical nature of flight-control components.
 The technical challenges were real. Sourcing AS9100-certified suppliers proved difficult, and internal quality scrutiny was intense by necessity, which often slowed progress but guaranteed safety. Mechanically, gear and bearing selection became a recurring challenge due to weight, size and life time constraints. I led failure investigations, particularly vibration and thermal-performance issues, and translated technical detail into programme actions through prioritisation, stakeholder updates, and risk-based decision making.
@@ -73,8 +70,8 @@ Despite the challenging environment, I kept programmes moving and brought them t
 I was promoted because of my technical credibility, initiative, and ability to bridge engineering with programme needs. Aerospace brings discipline: roles, responsibilities, and processes are clearly defined, and that clarity helped me empower the team. My role also allowed me to step into sourcing and manufacturing areas, where I learned first-hand that on-the-ground experience is as valuable as academic knowledge. Speaking directly with assemblers and manufacturing engineers shaped my understanding — and sharpened my ability to challenge engineering teams constructively.
 That habit of communicating widely across the business remains with me today. Working with diverse teams across the globe.
 
-## WATERS Corporation
-### Principal Systems Engineer (2020-2021)
+## Principal Systems Engineer (2020-2021) at WATERS Corporation
+
 When I transitioned from Triumph Group to Waters Corporation, it was a completely different environment, yet I quickly realised that everything I had learned from aerospace—discipline, structure, systems thinking, and the rigor of AS9100 and DO-178C—could be directly applied to IVD and LC/MS systems development. At Waters, I stepped into the role of Principal Systems Engineer, leading the systems architecture and product requirements for an LC/MS IVD platform designed specifically for New Born Screening.
 I brought a systems mindset from actuation systems, using that experience to drive a more efficient path toward IVD implementation. One of my first priorities was to commonalise the diverse LC/MS product platforms by defining a coherent, scalable architecture that integrated subsystems such as the mass spectrometer, liquid chromatograph, autosampler, and user interface. I translated complex user requirements into clear, structured system product requirements and developed detailed system models that captured feature-level behaviour and user experience.
 The IVD platform introduced several challenges—particularly China certification. Aligning IEC and ISO standards with GB/T requirements was far from straightforward, but I mapped the equivalencies and identified gaps to accelerate the certification pathway. Risk management was equally demanding. Unlike aerospace, where risks are usually built bottom-up, in the IVD context the most efficient approach was a top-down construction of the risk register. I led these activities, ensuring that risks were visible early and that control assessments met regulatory expectations.
@@ -83,7 +80,7 @@ My day-to-day work involved constant collaboration with systems architects, soft
 A key outcome of my time at Waters was how much I unblocked for the wider project. I accelerated certification planning, unblocked the software development team by providing clear requirements and architectural boundaries, exposed hidden risks, and delivered high-impact documentation—architecture maps, requirement matrices, cybersecurity guidance, and risk-based frameworks—that became reference materials for the broader organisation.
 What I enjoyed the most was that, unlike aerospace where systems are designed under specific bids, LC/MS IVD systems were built for thousands of customers. It was the first time I experienced designing a scalable architecture capable of supporting hundreds of instruments in a single installation. That shift—from bespoke to platform—gave me a completely new appreciation for productised systems engineering and was one of the highlights of my time at Waters.
 
-## Parallel Work for Triumph Group - Control Systems Consultant (2020 – 2023)
+## Consultant in Control Systems- Parallel Work, Triumph Group (2020 – 2023)
 While working full-time at Waters, I continued consulting for Triumph Group to support the completion and verification of the Direct Electronic Module (DEM) used to control the horizontal tail actuator on the Airbus A330. My focus was ensuring full traceability to the control system requirements, overseeing the design finalisation, and validating that the system met stringent aerospace certification and performance criteria. This work allowed me to maintain continuity with the actuation systems I had previously led, ensuring Triumph successfully delivered a fully compliant, rigorously verified system to Airbus.
 
 ## THERMOFISHER SCIENTIFIC
@@ -107,7 +104,7 @@ For the past five years, I have also served as an EU Expert Reviewer and Rapport
 IET member.
 
 # Hobbies
-Aerial Sports & Fitness – I have trained in aerial hoop and pole for the past 10 years and I intend to work towards an instructor qualification. I also enjoy endurance running, regularly completing 10K and half-marathon events, and previously completed a full marathon in 2015.
+Aerial Sports & Fitness – I have trained in 'Aerial Hoop' and 'Pole Fitness' for the past 10 years and I intend to work towards an instructor qualification. I also enjoy endurance running, regularly completing 10K and half-marathon events, and previously completed a full marathon in 2015.
 
 ## Skills
 
@@ -132,4 +129,5 @@ Aerial Sports & Fitness – I have trained in aerial hoop and pole for the past 
 - Citizenship: British and Peruvian
 - Driving License: Full
 - Health: Excellent; non-smoker
+
 
