@@ -143,11 +143,20 @@ def call_openai(messages, model_name, temperature):
         return None
 
 # ----- Chat UI -----
-# If a suggested prompt was clicked, submit it automatically (before rendering history)
-if st.session_state.get("pending_submit"):
-    user_input = st.session_state.pop("pending_submit")
+box_input = st.chat_input("Ask something about me…")
+
+# If a suggested prompt was clicked and the user didn't type something in the box, submit that
+pending = st.session_state.pop("pending_submit", None)
+if pending and not box_input:
+    user_input = pending
 else:
-    user_input = None
+    user_input = box_input
+
+# If a suggested prompt was clicked, submit it automatically (before rendering history)
+#if st.session_state.get("pending_submit"):
+#    user_input = st.session_state.pop("pending_submit")
+#else:
+ #   user_input = None
 
 # Render history
 for msg in st.session_state.messages[1:]:  # skip system
