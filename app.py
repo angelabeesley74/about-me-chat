@@ -14,6 +14,10 @@ if kb_file.exists():
 # Load CV (Angela_Beesley_CV.json)
 
 json_file = Path("Angela_Beesley_CV.json")
+try:
+    json_data = json.loads(json_file.read_text(encoding="utf-8"))
+except json.JSONDecodeError as e:
+    st.error(f"JSON parse error: {e}")
 
 # --- OpenAI Python SDK (>=1.0) ---
 try:
