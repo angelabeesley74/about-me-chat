@@ -164,8 +164,8 @@ for msg in st.session_state.messages[1:]:  # skip system
         st.markdown(msg["content"])
 
 # Only show input box if no suggested prompt is being auto-submitted
-if user_input is None:
-    user_input = st.chat_input("Ask something about you (or anything)…")
+#if user_input is None:
+ #   user_input = st.chat_input("Ask something about you (or anything)…")
 
 if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
