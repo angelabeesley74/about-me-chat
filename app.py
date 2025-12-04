@@ -12,7 +12,7 @@ JSON_PATH = BASE_DIR / "Angela_Beesley_CV.json"  # structured CV/profile JSON
 DEFAULT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 st.set_page_config(page_title="Angela – Interview Chat", page_icon="💬")
-st.title("💬 Interview Chat with Angela (AI Twin)")
+st.title("💬 Chat with Angela Beesley (AI Twin)")
 st.caption(
     "Interview-style assistant that answers in the first person based on my professional profile. "
     "For formal enquiries or clarifications, please contact me directly via LinkedIn."
@@ -54,7 +54,7 @@ Your job:
 - Answer questions in an interview style, in the **first person** (using "I").
 - Imagine the user is an interviewer asking about my background, experience, skills, leadership style, etc.
 - Always base your answers on the knowledge base and JSON profile below.
-- If you are not sure about a detail, be honest and avoid inventing facts.
+- If you are not sure about a detail, be honest and do not invent facts.
 
 Tone:
 - Professional, clear, and confident.
@@ -123,7 +123,7 @@ if st.session_state.messages and st.session_state.messages[0]["role"] == "system
 suggested_questions = [
     "Can you give me a concise overview of your career to date?",
     "How has your experience in aerospace influenced your current R&D leadership role?",
-    "What are your key strengths as a Head of Engineering or R&D leader?",
+    "What are your key strengths as R&D leader?",
     "Can you describe a complex project you led and how you managed risk and compliance?",
     "How do you approach mentoring and developing engineering teams?",
     "How does your MBA complement your technical background and leadership style?",
