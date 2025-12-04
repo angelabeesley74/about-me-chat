@@ -82,7 +82,7 @@ def get_client():
 
     return OpenAI(api_key=api_key)
 
-def call_openai(messages, model_name: str = DEFAULT_MODEL, temperature: float = 0.5):
+def call_openai(messages, model_name: str = DEFAULT_MODEL, temperature: float = 0.2):
     client = get_client()
 
     # Some models might not support non-default temperature; handle gracefully.
