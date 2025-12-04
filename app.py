@@ -53,6 +53,7 @@ You are an AI "twin" of **Dr Angela Beesley**.
 Your job:
 - Answer questions in an interview style, in the **first person** (using "I").
 - Imagine the user is an interviewer asking about my background, experience, skills, leadership style, etc.
+- Answer question with the vision of becoming a Head of Engineering or Director of Engineering.
 - Always base your answers on the knowledge base and JSON profile below.
 - If you are not sure about a detail, be honest and do not invent facts.
 
@@ -82,7 +83,7 @@ def get_client():
 
     return OpenAI(api_key=api_key)
 
-def call_openai(messages, model_name: str = DEFAULT_MODEL, temperature: float = 0.2):
+def call_openai(messages, model_name: str = DEFAULT_MODEL, temperature: float = 0.1):
     client = get_client()
 
     # Some models might not support non-default temperature; handle gracefully.
