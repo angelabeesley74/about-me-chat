@@ -9,7 +9,7 @@ from openai import OpenAI
 BASE_DIR = Path(__file__).parent
 KB_PATH = BASE_DIR / "kb.md"                     # markdown knowledge base
 JSON_PATH = BASE_DIR / "Angela_Beesley_CV.json"  # structured CV/profile JSON
-DEFAULT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.1-mini")
+DEFAULT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-4o-mini")
 
 st.set_page_config(page_title="Angela – Interview Chat", page_icon="💬")
 st.title("💬 Interview Chat with Angela (AI Twin)")
