@@ -1,161 +1,91 @@
-
 import os
 import json
-import streamlit as st
 from pathlib import Path
 
-# Load Knowledge Base (kb.md)
-kb_text = ""
-kb_file = Path("kb.md")
-if kb_file.exists():
-    # limit length so prompt stays efficient
-    kb_text = kb_file.read_text(encoding="utf-8")[:15000]
+import streamlit as st
+from openai import OpenAI
 
-# Load CV (Angela_Beesley_CV.json)
+# ========== CONFIG ==========
+BASE_DIR = Path(__file__).parent
+KB_PATH = BASE_DIR / "kb.md"                     # markdown knowledge base
+JSON_PATH = BASE_DIR / "Angela_Beesley_CV.json"  # structured CV/profile JSON
+DEFAULT_MODEL = os.environ.get("OPENAI_MODEL", "gpt-5.1-mini")
 
-json_path = Path("Angela_Beesley_CV.json")
+st.set_page_config(page_title="Angela – Interview Chat", page_icon="💬")
+st.title("💬 Interview Chat with Angela (AI Twin)")
+st.caption(
+    "Interview-style assistant that answers in the first person based on my professional profile. "
+    "For formal enquiries or clarifications, please contact me directly via LinkedIn."
+)
 
-try:
-    with json_path.open("r", encoding="utf-8") as f:
-        cv_data = json.load(f)
-    cv_json_str = json.dumps(cv_data, indent=2)
-except Exception as e:
-    st.error(f"Could not parse JSON file: {e}")
+# ========== LOAD KNOWLEDGE BASE & JSON PROFILE ==========
 
-# --- OpenAI Python SDK (>=1.0) ---
-try:
-    from openai import OpenAI
-except Exception as e:
-    st.error("OpenAI SDK not found. Make sure 'openai' is in requirements.txt and installed.")
-    raise
-
-# ----- App Title -----
-st.set_page_config(page_title="About Angela Beesley Chat", page_icon="💬")
-st.title("💬 Chat with Angela Beesley")
-st.caption("This chat tool reflects information drawn from my professional background. If you require additional detail or verification, please reach out to me on LinkedIn: https://www.linkedin.com/in/angela-beesley-9b859836/")
-
-# ----- Sidebar: Profile settings -----
-with st.sidebar:
-    st.header("🧩 Your profile")
-    st.write("Fill these fields — they prime the assistant about you.")
-    name = st.text_input("Name", value="Angela Beesley")
-    roles = st.text_input("Roles / Titles", value="Engineering Lead")
-    orgs = st.text_input("Organisations / Sectors", value="Analytical Instruments; Aerospace; Consumer goods")
-    interests = st.text_input("Interests / Domains", value="Organizational Strategy; Quantum computing; AI & data; Operations & supply chain; Sustainability")
-    achievements = st.text_area("Key achievements (bulleted)", value="- Led cross‑functional R&D teams\n- Designed analytics instrumentation improvements\n- MBA projects on quantum and supply chain")
-    tone = st.selectbox("Tone", ["Professional", "Warm", "Crisp & concise", "Enthusiastic"], index=0)
-    model_name = st.text_input("OpenAI model", value=os.environ.get("OPENAI_MODEL", "gpt-5-mini"))
-    temperature = st.slider("Creativity (temperature)", 0.0, 1.2, 0.4, 0.1)
-    st.divider()
-    st.write("**API key:** put `OPENAI_API_KEY` in Streamlit *secrets* or as an environment variable.")
-    clear = st.button("🧹 Clear conversation")
-
-if clear:
-    st.session_state.pop("messages", None)
-
-# ----- Build the system prompt from sidebar fields -----
-
-#profile_dict = {
- #   "name": name,
-  #  "roles": roles,
-   # "organizations_sectors": orgs,
-    #"interests": interests,
-    #"achievements": achievements,
-    #"tone": tone,
-#}
-
-
-# ---- Read JSON profile ----
-profile_dict = {}
-if json_file is not None:
+def load_kb(path: Path) -> str:
+    if not path.exists():
+        st.warning(f"Knowledge base file not found: {path}")
+        return ""
     try:
-        profile_dict = json.load(json_file)
+        return path.read_text(encoding="utf-8")
+    except Exception as e:
+        st.error(f"Could not read knowledge base file: {e}")
+        return ""
+
+def load_json_profile(path: Path):
+    if not path.exists():
+        st.warning(f"JSON profile file not found: {path}")
+        return {}
+    try:
+        text = path.read_text(encoding="utf-8")
+        return json.loads(text)
     except Exception as e:
         st.error(f"Could not parse JSON file: {e}")
-        profile_dict = {}
-else:
-    # Sensible default if no JSON is uploaded
-    profile_dict = {
-        "name": "Dr Angela Beesley",
-        "headline": "R&D Engineering Lead | Systems Engineer | MBA",
-        "summary": (
-            "Engineering leader with experience in aerospace, scientific instrumentation, "
-            "IVD/LC-MS, FMCG, and EU Horizon review. Strong in systems thinking, "
-            "regulatory compliance, and high-throughput/AI-assisted R&D."
-        )
-    }
+        return {}
 
+kb_text = load_kb(KB_PATH)
+cv_data = load_json_profile(JSON_PATH)
+cv_json_str = json.dumps(cv_data, indent=2, ensure_ascii=False) if cv_data else "{}"
 
+# ========== SYSTEM PROMPT (NO USER INPUT NEEDED) ==========
 
+SYSTEM_PROMPT = f"""
+You are an AI "twin" of **Dr Angela Beesley**.
 
+Your job:
+- Answer questions in an interview style, in the **first person** (using "I").
+- Imagine the user is an interviewer asking about my background, experience, skills, leadership style, etc.
+- Always base your answers on the knowledge base and JSON profile below.
+- If you are not sure about a detail, be honest and avoid inventing facts.
 
-SYSTEM_PROMPT = f'''
-You are acting as a conversational avatar of the user. 
-Respond to all questions as if **you are the user** speaking in first-person.
+Tone:
+- Professional, clear, and confident.
+- Where useful, give concise examples from my experience.
 
-Use only the information contained in the user profile below. 
-Do not invent details that are not in the profile. 
-If unsure about something, respond briefly and say that the specific detail is not available.
-
-Tone: confident, thoughtful, clear, and professionally warm.
-
-If the conversation resembles an interview, structure responses naturally:
-- Give clear, structured, concise but meaningful explanations in a good flow paragraph.
-- Do not use bullet points.
-- Use the knowledge base to answer interviews for Head or Director of Engineering positions, as such put emphasis on leardership skills.
-- Highlight experience, achievements, motivations, and leadership qualities when relevant.
-- Never claim capabilities or roles not supported by the knowledge base.
-
-Do NOT speak as an assistant. 
-Do NOT say “According to the profile” or “The user is…”
-Instead, speak as **“I”, “me”, and “my experience.”**
-
-[USER PROFILE JSON]
-{json.dumps(profile_dict, indent=2)}
-
-[KNOWLEDGE BASE]
+[KNOWLEDGE BASE: kb.md]
 {kb_text}
-'''
 
-# ----- Session state for chat history -----
-if "messages" not in st.session_state:
-    st.session_state.messages = [
-        {"role": "system", "content": SYSTEM_PROMPT},
-    ]
+[STRUCTURED PROFILE: Angela_Beesley_CV.json]
+{cv_json_str}
+"""
 
-# If profile changed, refresh the system message
-if st.session_state.messages and st.session_state.messages[0]["role"] == "system":
-    st.session_state.messages[0]["content"] = SYSTEM_PROMPT
+# ========== OPENAI CLIENT HELPERS ==========
 
-# ----- Suggested prompts -----
-suggested = [
-    "What is your area of expertise?",
-        "What motivates you?",
-        "Where do you see your next career step?",
-        "How many years experience do you have?",
-        "What are your strenghts?",
-        "What role did you enjoy the most in your career?",
-        "What type of leader are you?"
-]
+def get_client():
+    api_key = st.secrets.get("OPENAI_API_KEY", None) if hasattr(st, "secrets") else None
+    api_key = api_key or os.environ.get("OPENAI_API_KEY")
 
-with st.expander("✨ Try a suggested prompt"):
-    cols = st.columns(2)
-    for i, ex in enumerate(suggested):
-        if cols[i % 2].button(ex, key=f"btn_{i}"):
-            # Immediately treat the suggestion as if user submitted it
-            st.session_state["pending_submit"] = ex
-            st.rerun()
-
-# ----- Call OpenAI -----
-def call_openai(messages, model_name, temperature):
-    api_key = st.secrets.get("OPENAI_API_KEY") or os.environ.get("OPENAI_API_KEY")
     if not api_key:
-        st.error("Missing OPENAI_API_KEY. Add it to .streamlit/secrets.toml or your environment.")
+        st.error(
+            "OPENAI_API_KEY is not set. "
+            "Set it as an environment variable or in Streamlit secrets."
+        )
         st.stop()
 
-    client = OpenAI(api_key=api_key)
+    return OpenAI(api_key=api_key)
 
-    # Some models may not allow overriding temperature. If error occurs, retry without it.
+def call_openai(messages, model_name: str = DEFAULT_MODEL, temperature: float = 0.5):
+    client = get_client()
+
+    # Some models might not support non-default temperature; handle gracefully.
     try:
         completion = client.chat.completions.create(
             model=model_name,
@@ -164,7 +94,6 @@ def call_openai(messages, model_name, temperature):
         )
         return completion.choices[0].message.content
     except Exception as e:
-        # If model complains about temperature, retry without that arg
         if "temperature" in str(e).lower():
             try:
                 completion = client.chat.completions.create(
@@ -173,36 +102,59 @@ def call_openai(messages, model_name, temperature):
                 )
                 return completion.choices[0].message.content
             except Exception as e2:
-                st.error(f"OpenAI error (retry): {e2}")
+                st.error(f"OpenAI error (retry without temperature): {e2}")
                 return None
         st.error(f"OpenAI error: {e}")
         return None
 
-# ----- Chat UI -----
-box_input = st.chat_input("Ask something about me…")
+# ========== SESSION STATE (CHAT HISTORY) ==========
 
-# If a suggested prompt was clicked and the user didn't type something in the box, submit that
+if "messages" not in st.session_state:
+    st.session_state.messages = [
+        {"role": "system", "content": SYSTEM_PROMPT}
+    ]
+
+# Always keep system prompt up to date
+if st.session_state.messages and st.session_state.messages[0]["role"] == "system":
+    st.session_state.messages[0]["content"] = SYSTEM_PROMPT
+
+# ========== SUGGESTED INTERVIEW QUESTIONS ==========
+
+suggested_questions = [
+    "Can you give me a concise overview of your career to date?",
+    "How has your experience in aerospace influenced your current R&D leadership role?",
+    "What are your key strengths as a Head of Engineering or R&D leader?",
+    "Can you describe a complex project you led and how you managed risk and compliance?",
+    "How do you approach mentoring and developing engineering teams?",
+    "How does your MBA complement your technical background and leadership style?",
+]
+
+with st.expander("✨ Suggested interview questions"):
+    cols = st.columns(2)
+    for i, q in enumerate(suggested_questions):
+        if cols[i % 2].button(q, key=f"sugg_{i}"):
+            # Store the clicked question as "pending" and trigger a rerun
+            st.session_state["pending_submit"] = q
+            st.rerun()
+
+# ========== CHAT UI (NO SIDEBAR, ALWAYS SHOW INPUT) ==========
+
+# 1. Chat input box (always visible)
+box_input = st.chat_input("Ask an interview question…")
+
+# 2. If a suggested question was clicked and user didn't type anything, submit that
 pending = st.session_state.pop("pending_submit", None)
 if pending and not box_input:
     user_input = pending
 else:
     user_input = box_input
 
-# If a suggested prompt was clicked, submit it automatically (before rendering history)
-#if st.session_state.get("pending_submit"):
-#    user_input = st.session_state.pop("pending_submit")
-#else:
- #   user_input = None
-
-# Render history
-for msg in st.session_state.messages[1:]:  # skip system
+# 3. Render conversation history (excluding system)
+for msg in st.session_state.messages[1:]:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-# Only show input box if no suggested prompt is being auto-submitted
-#if user_input is None:
- #   user_input = st.chat_input("Ask something about you (or anything)…")
-
+# 4. If there is user input (typed or suggested), send to OpenAI
 if user_input:
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user"):
@@ -210,7 +162,9 @@ if user_input:
 
     with st.chat_message("assistant"):
         with st.spinner("Thinking…"):
-            reply = call_openai(st.session_state.messages, model_name, temperature)
+            reply = call_openai(st.session_state.messages)
             if reply:
                 st.markdown(reply)
-                st.session_state.messages.append({"role": "assistant", "content": reply})
+                st.session_state.messages.append(
+                    {"role": "assistant", "content": reply}
+                )
