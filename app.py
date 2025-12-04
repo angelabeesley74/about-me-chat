@@ -15,8 +15,18 @@ st.set_page_config(page_title="Angela – Interview Chat", page_icon="💬")
 st.title("💬 Chat with Angela Beesley (AI Twin)")
 st.caption(
     "Interview-style assistant that answers in the first person based on my professional profile. "
-    "For formal enquiries or clarifications, please contact me directly via LinkedIn."
+    "For formal enquiries or clarifications, please contact me directly via LinkedIn:https://www.linkedin.com/in/angela-beesley-9b859836/"
 )
+
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 
 # ========== LOAD KNOWLEDGE BASE & JSON PROFILE ==========
 
